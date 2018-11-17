@@ -1,0 +1,252 @@
+.main {
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    &__menu {
+        width: 25%;
+        padding: 30px 0px;
+        background-color: #222;
+        color: $white;
+
+        @media screen and (max-width: 1150px) {
+            width: 35%;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        @media screen and (max-width: 450px) {
+            padding: 0;
+            height: 50px;
+        }
+
+        &-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 350px;
+
+            @media screen and (max-width: 800px) {
+                flex-direction: row;
+                min-height: 60px;
+            }
+
+            &--item {
+                width: 100%;
+                padding: 15px 10px;
+                font-size: 1.8rem;
+                text-align: center;
+                transition: all .3s;
+                cursor: pointer;
+
+                @media screen and (max-width: 450px) {
+                    font-size: 1.5rem;
+                    padding: 10px 5px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                    @media screen and (max-width: 800px) {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba(#FFF, .7);
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &__hero {
+        width: 100%;
+        padding-left: 40px;
+
+        @media screen and (max-width: 950px) {
+            & > * {
+                padding-left: 30px;
+            }
+            padding-left: 0px;
+        }
+
+        @media screen and (max-width: 800px) {
+            & > * {
+                padding-left: 0px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 25px;
+        }
+
+        &-title {
+            font-size: 3.7rem;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            @media screen and (max-width: 800px) {
+                text-align: center;
+            }
+        }
+
+        &-img {
+            background-image: url(../img/desksmall.jpg);
+            width: 100%;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            &--desc {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 30%;
+                background-color: rgba(0, 0, 0, .7);
+                color: $white;
+                //height: 70px;
+                font-size: 1.9rem;
+                text-align: center;
+                padding: 20px 40px;
+
+                @media screen and (max-width: 1100px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-titletwo {
+            font-size: 3.1rem;
+            margin: 10px 0;
+
+            @media screen and (max-width: 800px) {
+                text-align: center;
+            }
+        }
+
+        &-desc {
+            font-size: 2.5rem;
+            width: 70%;
+            margin-bottom: 35px;
+
+            @media screen and (max-width: 800px) {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        &-undertitle {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        &-underdesc {
+            font-size: 2rem;
+            width: 90%;
+            margin-bottom: 55px;
+        }
+
+        blockquote {
+            font-size: 2rem;
+            width: 50%;
+            margin-top: 30px;
+
+            @media screen and (max-width: 800px) {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        cite {
+            font-size: 1.8rem;
+            margin-left: 30%;
+            margin-bottom: 40px;
+            display: block;
+
+            @media screen and (max-width: 800px) {
+                margin: 30px auto;
+                text-align: center;
+            }
+        }
+
+        &-gallery {
+            width: 100%;
+            //height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 950px) {
+                padding-left: 0px;
+                & > * {
+                    padding-left: 0px;
+                }
+            }
+
+            @media screen and (max-width: 830px) {
+                flex-direction: column;
+            }
+
+            &--img {
+                background-size: cover;
+                background-position: center;
+                width: 33%;
+                height: 250px;
+                position: relative;
+
+                @media screen and (max-width: 830px) {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                &-desc {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, .7);
+                    color: $white;
+                    height: 50px;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+            }
+
+            &--img:nth-child(1) {
+                background-image: url(../img/laptopmedium.jpg);
+
+                @media screen and (max-width: 830px) {
+                    background-image: url(../img/laptopsmall.jpg);
+                }
+            }
+
+            &--img:nth-child(2) {
+                background-image: url(../img/javascriptmedium.jpg);
+
+                @media screen and (max-width: 830px) {
+                    background-image: url(../img/javascriptsmall.jpg);
+                }
+            }
+
+            &--img:nth-child(3) {
+                background-image: url(../img/phpmedium.jpg);
+
+                @media screen and (max-width: 830px) {
+                    background-image: url(../img/phpsmall.jpg);
+                    margin-bottom: 0px;
+                }
+
+            }
+        }
+    }
+}

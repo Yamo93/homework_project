@@ -1,0 +1,41 @@
+/*
+- Make font size with html: 62.5%. 
+- Use floats all over the place (with the clearfix hack)
+*/
+$green: #136F63;
+$darkblue: #032B43;
+$purple: #70163C;
+$white: #EFEFEF;
+
+
+*, 
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media screen and (max-width: 600px) {
+        font-size: 56.25%;
+    }
+}
+
+body {
+    font-family: 'Niramit', sans-serif;
+    padding: 50px;
+    padding-bottom: 0px;
+
+    @media screen and (max-width: 900px) {
+        padding: 20px;
+    }
+    @media screen and (max-width: 700px) {
+        padding: 0px;
+    }
+
+}
+

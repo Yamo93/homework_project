@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Todos:
+        - swappa burgaren med den övre menyn, så att burgaren hamnar högst upp och kan vara fixed när man scrollar neråt i mindre skärmar
+
+        - Kommentera koden
+        - Lägg till riktig text och ta bort dummytexten
+        - Validera koden
+        - Ladda upp den
+        - Skriv lite om problematiken med att "välja rätt typsnittstorlek för mindre skärmar, då det är ganska relativt och beror på användaren i sig"
+
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Niramit:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="scrolldown">
+            <i class="fas fa-bars" id="burger" onclick="showDropDown()"></i>
+        </div>
+        <div class="backdrop" onclick="hideDropDown()"></div>
+        <div class="dropdown">
+            <p onclick="hideDropDown()">&times;</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsiv</li>
+                <li>Nyheter</li>
+                <li>Om Oss</li>
+            </ul>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-menu">
+                <li class="header__nav-menu--list">Language</li>
+                <li class="header__nav-menu--list">Lyssna</li>
+                <li class="header__nav-menu--list">Hjälp</li>
+            </ul>
+            <img class="menuimg" src="img/LogoMakr_7H6hSa.png" />
+        </nav>
+        <div class="header__body">
+            <img src="img/LogoMakr_7H6hSa.png" alt="Dev Rescue Logo" class="header__body-logo" />
+            <div class="header__body-right">
+                <div class="header__body-right--top">
+                    <h2 class="header__body-right--top-name">Net Geeks To The Rescue!</h2>
+                    <input type="search" id="search" placeholder="Sök">
+                </div>
+                <div class="header__body-right--bottom">
+                    <ul class="header__body-right--bottom-menu">
+                        <li class="header__body-right--bottom-menu--list">HTML</li>
+                        <li class="header__body-right--bottom-menu--list">CSS</li>
+                        <li class="header__body-right--bottom-menu--list">Responsiv</li>
+                        <li class="header__body-right--bottom-menu--list">Nyheter</li>
+                        <li class="header__body-right--bottom-menu--list">Om Oss</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <ul class="header__bottom-menu">
+                <li class="header__bottom-menu--list">Start</li>
+                <li class="header__bottom-menu--list">HTML</li>
+                <li class="header__bottom-menu--list">HTML5</li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main__menu">
+            <ul class="main__menu-list">
+                <li class="main__menu-list--item">HTML 1</li>
+                <li class="main__menu-list--item">HTML 2</li>
+                <li class="main__menu-list--item">HTML 3</li>
+                <li class="main__menu-list--item">HTML 4</li>
+                <li class="main__menu-list--item">XHTML</li>
+                <li class="main__menu-list--item">HTML5</li>
+            </ul>
+        </div>
+        <div class="main__hero">
+            <h1 class="main__hero-title">Stor rubrik, en rad</h1>
+            <div class="main__hero-img">
+                <p class="main__hero-img--desc">En häftig bild :)</p>
+            </div>
+            <h2 class="main__hero-titletwo">Lolzors, this is fun :)</h2>
+            <p class="main__hero-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, excepturi velit aliquid pariatur corporis eaque!</p>
+
+            <h3 class="main__hero-undertitle">Lorem ipsum dolor sit amet.</h3>
+            <p class="main__hero-underdesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo provident omnis tempore suscipit odio beatae id itaque consectetur quia quo excepturi est vel quaerat possimus repudiandae consequuntur ut perspiciatis ex nostrum? Quia, ex nostrum expedita reiciendis cum dicta eaque ab itaque iusto saepe dolore vero doloremque, molestiae modi debitis!</p>
+            <h3 class="main__hero-undertitle">Lorem ipsum dolor sit amet.</h3>
+            <p class="main__hero-underdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quae praesentium? Quam sit dolores inventore in, impedit iste quas hic ad deleniti velit architecto ab laboriosam autem quibusdam minus eos. Blanditiis culpa harum iusto, minima dicta voluptatum id tempore consequatur dignissimos, tempora molestias distinctio dolores enim! Assumenda molestiae rerum maiores.</p>
+            <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore veniam nesciunt qui necessitatibus corporis, unde nam laborum! Illum, illo."</blockquote>
+            <cite>Lorem ipsum dolor sit amet.</cite>
+            <div class="main__hero-gallery">
+                <div class="main__hero-gallery--img">
+                    <p class="main__hero-gallery--img-desc">Våra bästa verk</p>
+                </div>
+                <div class="main__hero-gallery--img">
+                    <p class="main__hero-gallery--img-desc">Våra senaste verk</p>
+                </div>
+                <div class="main__hero-gallery--img">
+                    <p class="main__hero-gallery--img-desc">Våra kommande verk</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <ul class="footer__info-list">
+                <li class="footer__info-list--item">Besök</li>
+                <li class="footer__info-list--item">Fysisk adress</li>
+                <li class="footer__info-list--item">Kontakt</li>
+                <li class="footer__info-list--item">Telefon</li>
+                <li class="footer__info-list--item">Epost</li>
+            </ul>
+            <ul class="footer__info-list">
+                <li class="footer__info-list--item">Cookies</li>
+                <li class="footer__info-list--item">Om webbplatsen</li>
+                <li class="footer__info-list--item">Site-map</li>
+                <li class="footer__info-list--item">A-Ö</li>
+            </ul>
+            <ul class="footer__info-list">
+                <li class="footer__info-list--item">Copyright</li>
+                <li class="footer__info-list--item"><a href="https://jigsaw.w3.org/css-validator/">Länk till CSS-validering</a></li>
+                <li class="footer__info-list--item"><a href="https://validator.w3.org/">Länk till HTML-validering</a></li>
+            </ul>
+            <ul class="footer__info-socialmedia">
+                <li class="footer__info-socialmedia--icon">
+                    <i class="fab fa-linkedin"></i>
+                </li>
+                <li class="footer__info-socialmedia--icon">
+                    <i class="fab fa-facebook"></i>
+                </li>
+                <li class="footer__info-socialmedia--icon">
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li class="footer__info-socialmedia--icon">
+                    <i class="fab fa-twitter-square"></i>
+                </li>
+                <li class="footer__info-socialmedia--icon">
+                    <i class="fab fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__backtotop"><a href="#">Tillbaka till toppen av sidan <span><i class="fas fa-arrow-up"></i></span>
+        </a>
+        </div>
+    </footer>
+
+    <script>
+
+        window.addEventListener('keyup', hideDropDown);
+        function showDropDown() {
+            document.querySelector('.dropdown').style.transform = 'translateY(0vh)';
+            document.querySelector('.backdrop').style.display = 'block';
+        }
+
+        function hideDropDown(e) {
+            document.querySelector('.dropdown').style.transform = 'translateY(-85vh)';
+            document.querySelector('.backdrop').style.display = 'none';
+            if (e.keyCode === 27) {
+            document.querySelector('.dropdown').style.transform = 'translateY(-85vh)';
+            }
+        }
+    </script>
+</body>
+</html>

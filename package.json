@@ -1,0 +1,14 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "description": "layoutuppgift",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Yamo Gebrewold",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
